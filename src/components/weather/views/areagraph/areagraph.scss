@@ -1,0 +1,42 @@
+@import "../../../../styles/variables";
+
+.grid-areagraph {
+  display: grid;
+  justify-content: start;
+  grid-template-columns: auto auto auto;
+  margin-bottom: 30px;
+
+  > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .achart {
+      color: $pale-yellow;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 992px) {
+  .grid-areagraph {
+    margin-bottom: 20px;
+
+    .achart {
+        fill: $pale-yellow;
+    }
+  }
+}
+
+
+/* Small devices (phones) */
+@media (max-width: 767px) {
+  .grid-areagraph {
+    grid-template-columns: auto auto;
+    margin-bottom: 20px;
+
+    .achart {
+        fill: $pale-yellow;
+    }
+  }
+}

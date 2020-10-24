@@ -1,0 +1,46 @@
+@import 'variables';
+
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $dark-yellow;
+  background: linear-gradient(to bottom, $dark-yellow, $light-yellow);
+
+  .container {
+    width: 920px;
+    height: auto;
+    min-height: 650px;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $white;
+    box-shadow: 0 0 2rem rgba($black, .5);
+  }
+}
+
+/* Medium and Small devices (phones & tablets) */
+@media (max-width: 992px) {
+  #root {
+    .container {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+}
+
+@media (max-height: 680px) {
+  #root {
+    .container {
+      min-height: 95%;
+      flex: 1 1 100%;
+    }
+  }
+}
