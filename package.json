@@ -1,8 +1,31 @@
 {
+  "homepage": "https://satishagr.github.io/weatherApp/",
   "name": "weather-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://satishagr.github.io/weatherApp/",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "dependencies": {
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
@@ -49,13 +72,6 @@
     "webpack-dev-server": "2.9.4",
     "webpack-manifest-plugin": "1.3.2",
     "whatwg-fetch": "2.0.3"
-  },
-  "scripts": {
-    "start": "node scripts/start.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
   },
   "devDependencies": {
     "gh-pages": "^3.1.0",
